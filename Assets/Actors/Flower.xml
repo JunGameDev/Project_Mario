@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TagComponent>Item</TagComponent>
+  <TransformComponent>
+    <Position x="400" y="200"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Objects/Items_Objects_NPCs.png"/>
+    <SourceRect x = "288" y = "32" w = "16" h = "16"/>
+    <DestRect width = "20" height = "20"/>
+    <Alpha alpha = "255"/>
+    <Center x="9" y="9"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <AnimationComponent>
+    <InitialAnim>Idle</InitialAnim>
+    <Idle name="Idle" frame = '4' xPos = '288'  yPos = '32' speed='1' loop='true' duration='0.05'>
+      <Size width="16" height="16"/>
+      <Dest width = "36" height = "36"/>
+    </Idle>
+  </AnimationComponent>
+  <DynamicBodyComponent>
+    <Dimensions width = "20" height = "20"/>
+    <Fixed>true</Fixed>
+    <Fixture>
+      <Dimensions width = "18" height = "18"/>
+      <Density>10</Density>
+      <Friction>1</Friction>
+      <Type>Box</Type>
+      <CategoryBits>64</CategoryBits>
+      <MaskBits>5</MaskBits>
+      <UserData>Item</UserData>
+    </Fixture>
+  </DynamicBodyComponent>  
+</Actor>

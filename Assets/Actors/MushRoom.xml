@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TagComponent>Item</TagComponent>
+  <TransformComponent>
+    <Position x="-100" y="-100"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Objects/Items_Objects_NPCs.png"/>
+    <SourceRect x = "0" y = "0" w = "16" h = "16"/>
+    <DestRect width = "36" height = "36"/>
+    <Center x = "7" y = "7"/>
+    <Alpha alpha = "255"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <DynamicBodyComponent>
+    <Dimensions width = "24" height = "24"/>
+    <Fixed>true</Fixed>
+    <GravityScale>1.7</GravityScale>
+    <Fixture>
+      <Dimensions width = "18" height = "18"/>
+      <Density>1</Density>
+      <Friction>1</Friction>
+      <Type>Box</Type>
+      <CategoryBits>64</CategoryBits>
+      <MaskBits>5</MaskBits>
+      <UserData>Item</UserData>
+    </Fixture>
+  </DynamicBodyComponent>  
+</Actor>

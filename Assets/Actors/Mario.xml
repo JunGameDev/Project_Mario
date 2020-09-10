@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TransformComponent>
+     <Position x="164" y="333"/>
+  </TransformComponent>
+  <HealthComponent>3</HealthComponent>
+  <TextureComponent>
+    <Image path ="Images/Mario/Mario_Sheet.png"/>
+    <SourceRect x = "0" y = "0" w = "15" h = "15"/>
+    <DestRect width = "56" height = "104"/>
+    <Color r="255" g="255" b="255" alpha = "255"/>
+    <Center x="15" y="15"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <AnimationComponent>
+    <InitialAnim>Idle</InitialAnim>
+    <Idle_Super name="Idle_Super" frame = '1' xPos = '80'  yPos = '0' speed='1' loop='false' duration='0.0'>
+      <Size width="16" height="32"/>
+      <Dest width = "48" height = "96"/>
+      <Offset x = "0" y = "-24"/>
+    </Idle_Super>
+    <Walk_Super name="Walk_Super" frame = '3' xPos = '96'  yPos = '0' speed='1' loop='true' duration='0.1'>
+      <Size  width="16" height="32"/>
+      <Dest width = "48" height = "96"/>
+      <Offset x = "0" y = "-24"/>
+    </Walk_Super>
+    <Idle_Small name="Idle_Small" frame = '1' xPos = '80'  yPos = '32' speed='1' loop='false' duration='0.0'>
+      <Size width="15" height="15"/>
+      <Dest width = "48" height = "48"/>
+    </Idle_Small>
+    <Walk_Small name="Walk_Small" frame = '3' xPos = '96'  yPos = '32' speed='1' loop='true' duration='0.1'>
+      <Size width="15" height="15"/>
+      <Dest width = "48" height = "48"/>
+    </Walk_Small>
+  </AnimationComponent>
+  <MarioStateMachine InitState = "SmallState">
+    <SuperState InitState  = "Idle">
+      <SuperIdleState name = "Idle"/>
+      <SuperWalkingState name = "Walk"/>
+    </SuperState>
+    <SmallState InitState  = "Idle">
+      <SmallIdleState name = "Idle"/>
+      <SmallWalkingState name = "Walk"/>
+    </SmallState>
+  </MarioStateMachine>
+  <AudioSource>
+    <Clip name = "Mario_Jump_Small" path ="Sounds/Mario/Mario_Jump_Small.wav" loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+    <Clip name = "Mario_Jump_Super" path ="Sounds/Mario/Mario_Jump_Super.wav" loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+    <Clip name = "Mario_Die" path ="Sounds/Mario/Mario_Die.wav" loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+    <Clip name = "Stomp"      path ="Sounds/Mario/Stomp.wav"      loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+    <Clip name = "PowerUp"    path ="Sounds/Mario/PowerUp.wav"    loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+    <Clip name = "PowerDown"    path ="Sounds/Env/PipeAndPowerDown.wav"    loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+    <Clip name = "StageClear" path ="Sounds/Env/StageClear.wav" loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+    <Clip name = "Fire" path ="Sounds/Mario/FireBall.wav" loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+    <Clip name = "BrickSmash" path ="Sounds/Env/Brick_Smash.wav" loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+    <Clip name = "1-up" path ="Sounds/Mario/LiftUp.wav" loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+  </AudioSource>
+  <ParticleComponent>
+    <Image path ="Images/Star.png" x="0" y="0" w="300" h="300"/>
+  </ParticleComponent>
+  <Attackable>
+    <CanAttack>false</CanAttack>
+  </Attackable>
+  <DynamicBodyComponent>
+    <Dimensions width = "20" height = "20"/>
+    <Fixed>true</Fixed>
+    <Damping>1.5</Damping>
+    <GravityScale>1.7</GravityScale>
+    <Fixture>
+      <Type>Box</Type>
+      <Dimensions width = "15" height = "15"/>
+      <Center x = "0" y ="18"/>
+      <Density>0</Density>
+      <Friction>0</Friction>
+      <Sensor>true</Sensor>
+      <CategoryBits>1</CategoryBits>
+			<MaskBits>119</MaskBits>
+      <UserData>Bottom</UserData>
+    </Fixture>
+    <Fixture>
+      <Type>Box</Type>
+      <Dimensions width = "15" height = "7"/>
+      <Center x = "0" y ="-18"/>
+      <Density>0</Density>
+      <Friction>0</Friction>
+      <CategoryBits>1</CategoryBits>
+			<MaskBits>119</MaskBits>
+      <Sensor>true</Sensor>
+      <UserData>Head</UserData>
+    </Fixture>
+    <Fixture>
+      <Type>Box</Type>
+      <Dimensions width = "20" height = "20"/>
+      <Density>10</Density>
+      <Friction>30</Friction>
+      <CategoryBits>1</CategoryBits>
+      <MaskBits>119</MaskBits>
+      <Sensor>false</Sensor>
+      <UserData>Body</UserData>
+    </Fixture>
+  </DynamicBodyComponent>
+</Actor>

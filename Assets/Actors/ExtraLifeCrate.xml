@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TagComponent>Crate</TagComponent>
+  <TransformComponent>
+    <Position x="200" y="200"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Map/Map_TileSet.png"/>
+    <SourceRect x = "384" y = "0" w = "16" h = "16"/>
+    <DestRect width = "48" height = "48"/>
+    <Alpha alpha = "255"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <AnimationComponent>
+    <InitialAnim>Idle</InitialAnim>
+    <Idle  name="Idle" frame = '3' xPos = '384' yPos = '0' speed='1.2' loop='true' duration='0.2'>
+      <Size width="16" height="16"/>
+      <Dest width = "48" height = "48"/>
+    </Idle>
+    <Empty  name="Empty" frame = '1' xPos = '432' yPos = '0' speed='1' loop='false' duration='1'>
+      <Size width="16" height="16"/>
+      <Dest width = "48" height = "48"/>
+    </Empty>
+  </AnimationComponent>
+  <CrateComponent>
+    <ItemName>ExtraLife</ItemName>
+  </CrateComponent>
+  <StaticBodyComponent>
+    <Dimensions width = "0" height = "0"/>
+  </StaticBodyComponent>
+</Actor>

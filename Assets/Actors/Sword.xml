@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TransformComponent>
+     <Position x="700" y="700"/>
+  </TransformComponent>
+  <TextureComponent>
+     <Image path ="Images/Objects/Sword.png"/>
+     <SourceRect x = "0" y = "0" w = "512" h = "512"/>
+     <DestRect width = "50" height = "50"/>
+     <Alpha alpha = "255"/>
+     <Angle degree = "0"/>
+  </TextureComponent>
+  <BoxCollider2D>
+    <Size width = "35" height = "35"/>
+  </BoxCollider2D>
+</Actor>

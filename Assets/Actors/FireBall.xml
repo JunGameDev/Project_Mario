@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TransformComponent>
+     <Position x="-50" y="-50"/>
+     <Movement speed ="12"/>
+  </TransformComponent>
+  <TextureComponent>
+     <Image path ="Images/Objects/Items_Objects_NPCs.png"/>
+     <SourceRect x = "96" y = "144" w = "7" h = "7"/>
+     <DestRect width = "35" height = "35"/>
+     <Center x="10" y="10"/>
+     <Alpha alpha = "255"/>
+     <Angle degree = "0"/>
+  </TextureComponent>
+  <AnimationComponent>
+    <InitialAnim>Idle</InitialAnim>
+    <Idle name="Idle" frame ='1' speed='1' loop='true' duration='0.1'>
+      <Frame1 xPos = '96'  yPos = '144' width = '8' height ='8' xOffset ='0' yOffset = '0' destWidth ='35' destHeight ='35'/>
+      <Frame2 xPos = '104' yPos = '144' width = '8' height ='8' xOffset ='0' yOffset = '0' destWidth ='35' destHeight ='35'/>
+      <Frame3 xPos = '96'  yPos = '152' width = '8' height ='8' xOffset ='0' yOffset = '0' destWidth ='35' destHeight ='35'/>
+      <Frame4 xPos = '104' yPos = '152' width = '8' height ='8' xOffset ='0' yOffset = '0' destWidth ='35' destHeight ='35'/>
+    </Idle>   
+  </AnimationComponent>
+
+  <DynamicBodyComponent>
+    <Dimensions width = "15" height = "15"/>
+    <Bullet>true</Bullet>
+    <Fixed>true</Fixed>
+    <Fixture>
+      <Type>Circle</Type>
+      <Density>10</Density>
+      <Friction>1</Friction>
+      <Radius>16</Radius>
+      <Sensor>false</Sensor>
+      <CategoryBits>11</CategoryBits>
+			<MaskBits>6</MaskBits>
+      <UserData>FireBall</UserData>
+    </Fixture>
+  </DynamicBodyComponent>  
+
+</Actor>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TransformComponent>
+    <Position x="200" y="200"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/PurpleLight.png"/>
+    <SourceRect x = "0" y = "0" w = "2414" h = "2448"/>
+    <DestRect width = "256" height = "256"/>
+    <Alpha alpha = "255"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+</Actor>

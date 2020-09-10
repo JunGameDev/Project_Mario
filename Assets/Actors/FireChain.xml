@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TagComponent>Projectile</TagComponent>
+  <TransformComponent>
+    <Position x="200" y="100"/>
+    <Movement speed ="1"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Objects/Items_Objects_NPCs.png"/>
+    <SourceRect x = "155" y = "176" w = "8" h = "48"/>
+    <DestRect width = "38" height = "180"/>
+    <Center x="16" y="5"/>
+    <Alpha alpha = "255"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <AnimationComponent>
+    <InitialAnim>Idle</InitialAnim>
+    <Idle name="Idle" frame ='1' speed='1' loop='true' duration='0.1'>
+      <Frame2 xPos = '152' yPos = '176' width = '8' height ='48' xOffset ='20' yOffset = '110' destWidth ='30' destHeight ='180'/>
+      <Frame1 xPos = '144' yPos = '176' width = '8' height ='48' xOffset ='20' yOffset = '110' destWidth ='30' destHeight ='180'/>
+      <Frame3 xPos = '160' yPos = '176' width = '8' height ='48' xOffset ='20' yOffset = '110' destWidth ='30' destHeight ='180'/>
+      <Frame4 xPos = '168' yPos = '176' width = '8' height ='48' xOffset ='20' yOffset = '110' destWidth ='30' destHeight ='180'/>
+    </Idle>
+  </AnimationComponent>
+  <DynamicBodyComponent>
+    <Dimensions width = "35" height = "210"/>
+    <Bullet>true</Bullet>
+    <Fixed>true</Fixed>
+    <GravityScale>0</GravityScale>
+    <Fixture>
+      <Dimensions width = "15" height = "90"/>
+      <Center x = "0" y ="85"/>
+      <Density>10</Density>
+      <Friction>1</Friction>
+      <Type>Box</Type>
+      <Sensor>true</Sensor>
+      <UserData>Bullet</UserData>
+    </Fixture>
+  </DynamicBodyComponent>
+</Actor>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Component data sheet for ranger character.-->
+<Actor>
+  <TransformComponent>
+    <Position x="-250" y="300"/>
+    <Movement speed ="0"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Monsters/RangerSpriteSheet.png"/>
+    <SourceRect x = "0" y = "0" w = "32" h = "32"/>
+    <DestRect width = "100" height = "100"/>
+    <Color r="255" g="255" b="255" alpha = "255"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+</Actor>

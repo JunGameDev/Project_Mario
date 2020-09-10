@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TransformComponent>
+    <Position x="50" y="30"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/GreenLight.png"/>
+    <SourceRect x = "0" y = "0" w = "3368" h = "3595"/>
+    <DestRect width = "256" height = "256"/>
+    <Alpha alpha = "255"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+</Actor>

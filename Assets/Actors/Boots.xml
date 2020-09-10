@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TagComponent>Item</TagComponent>
+  <TransformComponent>
+     <Position x="100" y="100"/>
+  </TransformComponent>
+  <TextureComponent>
+     <Image path ="Images/Objects/Boots.png"/>
+     <SourceRect x = "0" y = "0" w = "620" h = "620"/>
+     <DestRect width = "50" height = "50"/>
+     <Alpha alpha = "255"/>
+     <Angle degree = "0"/>
+  </TextureComponent>
+  <BoxCollider2D>
+    <Size width = "35" height = "35"/>
+  </BoxCollider2D>
+</Actor>

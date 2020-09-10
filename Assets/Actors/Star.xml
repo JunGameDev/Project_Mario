@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TransformComponent>
+    <Position x="400" y="400"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Objects/Items_Objects_NPCs.png"/>
+    <SourceRect x = "0" y = "0" w = "16" h = "16"/>
+    <DestRect width = "48" height = "48"/>
+    <Alpha alpha = "255"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <AnimationComponent>
+    <InitialAnim>Idle</InitialAnim>
+    <Size   width="16" height="16"/>
+    <Idle   name="Idle" frame = '4' xPos = '0' yPos = '48' speed='1' loop='true' duration='0.0'/>
+  </AnimationComponent>
+</Actor>

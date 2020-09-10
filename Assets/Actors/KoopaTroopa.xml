@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TagComponent>Monster</TagComponent>
+  <TransformComponent>
+    <Position x="400" y="300"/>
+    <Movement speed ="1"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Monsters/Enemies_n_Bosses.png"/>
+    <SourceRect x = "0" y = "0" w = "16" h = "22"/>
+    <DestRect width = "48" height = "66"/>
+    <Color r="255" g="255" b="255" alpha = "255"/>
+    <Center x="0" y="0"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <AnimationComponent>
+    <InitialAnim>Walk</InitialAnim>
+    <Walk name="Walk" frame = '2' xPos = '96' yPos = '10' speed='1' loop='true' duration='0.1'>
+      <Size width="16" height="22"/>
+      <Dest width="48" height="66"/>
+    </Walk>
+  </AnimationComponent>
+  <DynamicBodyComponent>
+    <Dimensions width = "20" height = "20"/>
+    <Density>1</Density>
+    <Friction>1</Friction>
+    <CategoryBits>12</CategoryBits>
+		<MaskBits>5</MaskBits>
+    <Type>Box</Type>
+  </DynamicBodyComponent>
+</Actor>

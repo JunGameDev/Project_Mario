@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TagComponent>NPC</TagComponent>
+  <TransformComponent>
+    <Position x="80" y="0"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Objects/Items_Objects_NPCs.png"/>
+    <SourceRect x = "17" y = "232" w = "14" h = "23"/>
+    <DestRect width = "42" height = "69"/>
+    <Alpha alpha = "255"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <StaticBodyComponent>
+    <Dimensions width = "40" height = "40"/>
+    <Density>1</Density>
+    <Friction>1</Friction>
+  </StaticBodyComponent>
+</Actor>

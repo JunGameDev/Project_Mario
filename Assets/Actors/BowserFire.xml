@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TagComponent>Projectile</TagComponent>
+  <TransformComponent>
+    <Position x="100" y="0"/>
+    <Movement speed ="-8"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Monsters/Enemies_n_Bosses.png"/>
+    <SourceRect x = "784" y = "0" w = "23" h = "8"/>
+    <DestRect width = "69" height = "24"/>
+    <Color r="255" g="255" b="255" alpha = "255"/>
+    <Center x="-10" y="-10"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <AnimationComponent>
+    <InitialAnim>Idle</InitialAnim>
+    <Idle name="Idle" frame ='2' speed='1' loop='true' duration='0.1'>
+      <Frame1 xPos = '784' yPos = '0' width = '23' height ='8' xOffset ='0' yOffset = '0' destWidth ='69' destHeight ='24'/>
+      <Frame2 xPos = '784' yPos = '8' width = '23' height ='8' xOffset ='0' yOffset = '0' destWidth ='69' destHeight ='24'/>
+    </Idle>
+  </AnimationComponent>
+  <DynamicBodyComponent>
+    <Dimensions width = "50" height = "50"/>
+    <Bullet>true</Bullet>
+    <Fixed>true</Fixed>
+    <GravityScale>0</GravityScale>
+    <Fixture>
+      <Dimensions width = "35" height = "10"/>
+      <Density>10</Density>
+      <Friction>1</Friction>
+      <Type>Box</Type>
+      <Sensor>true</Sensor>
+      <UserData>Bullet</UserData>
+    </Fixture>
+  </DynamicBodyComponent>  
+</Actor>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Component data sheet for ranger character.-->
+<Actor>
+  <TransformComponent>
+    <Position x="0" y="0"/>
+    <Movement speed ="0"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Monsters/Enemies_n_Bosses.png"/>
+    <SourceRect x = "0" y = "0" w = "32" h = "32"/>
+    <DestRect width = "96" height = "96"/>
+    <Center x="24" y="24"/>
+    <Color r="255" g="255" b="255" alpha = "255"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <AudioSource>
+    <Clip name = "Bowser_Fire" path ="Sounds/Bowser/BowserFire.wav" loop = "false" playOnAwake = "false" volume = "128" mute = "false"/>
+  </AudioSource>
+  <AnimationComponent>
+    <InitialAnim>Walk</InitialAnim>
+    <Walk name="Walk" frame = '4' xPos = '656' yPos = '0' speed='1' loop='true' duration='0.1'>
+      <Size width="32" height="32"/>
+      <Dest width="96" height="96"/>
+    </Walk>
+  </AnimationComponent>
+  <DynamicBodyComponent>
+    <Dimensions width = "50" height = "50"/>
+    <Fixture>
+      <Type>Box</Type>
+      <Dimensions width = "800" height = "70"/>
+      <Center x = "-600" y ="5"/>
+      <Density>0</Density>
+      <Friction>0</Friction>
+      <CategoryBits>2</CategoryBits>
+			<MaskBits>13</MaskBits>
+      <Sensor>true</Sensor>
+      <UserData>Rader</UserData>
+    </Fixture>
+    <Fixture>
+      <Dimensions width = "50" height = "50"/>
+      <Density>10</Density>
+      <Friction>1</Friction>
+      <CategoryBits>2</CategoryBits>
+			<MaskBits>13</MaskBits>
+      <Type>Box</Type>
+      <UserData>Bowser</UserData>
+    </Fixture>
+  </DynamicBodyComponent>
+</Actor>

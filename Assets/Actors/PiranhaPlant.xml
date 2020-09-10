@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TransformComponent>
+    <Position x="350" y="200"/>
+    <Movement speed ="1"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Monsters/Enemies_n_Bosses.png"/>
+    <SourceRect x = "0" y = "0" w = "16" h = "24"/>
+    <DestRect width = "48" height = "72"/>
+    <Color r="255" g="255" b="255" alpha = "255"/>
+    <Center x="0" y="16"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <AnimationComponent>
+    <InitialAnim>Walk</InitialAnim>
+    <Size   width="16" height="24"/>
+    <Walk   name="Walk" frame = '2' posX = '192' posY = '9' speed='1' loop='true' duration='0.1'/>
+  </AnimationComponent>
+</Actor>

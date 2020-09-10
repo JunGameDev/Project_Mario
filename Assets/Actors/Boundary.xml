@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TransformComponent>
+    <Position x="0" y="210"/>
+  </TransformComponent>
+  <StaticBodyComponent>
+    <Dimensions width = "0" height = "0"/>
+    <CategoryBits>4</CategoryBits>
+    <MaskBits>95</MaskBits>
+  </StaticBodyComponent>
+</Actor>

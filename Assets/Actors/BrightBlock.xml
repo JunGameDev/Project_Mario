@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TagComponent>Tile</TagComponent>
+  <TransformComponent>
+    <Position x="200" y="200"/>
+  </TransformComponent>
+  <TextureComponent>
+    <Image path ="Images/Map/Map_Tileset.png"/>
+    <SourceRect x = "16" y = "0" w = "16" h = "16"/>
+    <DestRect width = "48" height = "48"/>
+    <Alpha alpha = "255"/>
+    <Angle degree = "0"/>
+  </TextureComponent>
+  <StaticBodyComponent>
+    <Dimensions width = "0" height = "0"/>
+  </StaticBodyComponent>
+</Actor>
+

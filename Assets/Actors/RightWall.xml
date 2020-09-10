@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Actor>
+  <TransformComponent>
+    <Position x="350" y="200"/>
+  </TransformComponent>
+  <StaticBodyComponent>
+    <Dimensions width = "5" height = "800"/>
+  </StaticBodyComponent>
+</Actor>
