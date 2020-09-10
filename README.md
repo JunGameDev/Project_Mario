@@ -19,5 +19,5 @@ You may not be able to build this project since it required Beluga.lib
 | Keycode     | Action                        |
 |-------------|-------------------------------|
 | Wheel Down  | Decrease music volume by 5    |
-| Wheel Up    | Increase music volume by 55   |
+| Wheel Up    | Increase music volume by 5    |
 
