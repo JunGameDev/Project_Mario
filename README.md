@@ -1,6 +1,6 @@
 # Project_Mario
-Mario Clone game which is powered by Beluga-Engine.
-You may not be able to build this project since it required Beluga.lib
+Mario Clone game which is powered by Beluga-Engine.<br>
+You may not be able to build this project since it is dependent to Beluga Engine and its sub-modules.
 
 # How to play
 
