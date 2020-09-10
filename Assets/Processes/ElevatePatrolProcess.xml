@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Process>
+  <Type>Point</Type>
+  <HasReturnPoint>true</HasReturnPoint>
+  <From x = "7410.00" y = "960.00"/>
+  <To x = "7410.00" y = "420.00"/>
+  <Speed x = "0" y = "-1"/>
+</Process>

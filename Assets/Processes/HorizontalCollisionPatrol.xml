@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Process>
+  <Type>Collision</Type>
+  <Speed x = "1" y = "0"/>
+</Process>
