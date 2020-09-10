@@ -1,0 +1,16 @@
+namespace Lua
+{
+}
+
+void TextureComponent::RegisterWithScript()
+{
+    auto& scripting = ApplicationLayer::GetInstance()->GetGameLayer()->GetScriptingManager();
+    scripting.GetGlobal("g_logic");
+    scripting.GetFromTable("actors");
+    scripting.GetFromTable(GetOwner()->GetId());
+
+    scripting.CreateTable();
+    scripting.AddToTable("this", this);
+    scripting.AddToTable("TextureComponent");
+    scripting.PopAll();
+}
