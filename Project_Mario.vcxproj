@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test|Win32">
+      <Configuration>Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test|x64">
+      <Configuration>Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Source\AnimationComponent.cpp" />
+    <ClCompile Include="Source\BowserView.cpp" />
+    <ClCompile Include="Source\CrateComponent.cpp" />
+    <ClCompile Include="Source\DamageComponent.cpp" />
+    <ClCompile Include="Source\FireBallView.cpp" />
+    <ClCompile Include="Source\FireChainView.cpp" />
+    <ClCompile Include="Source\MushroomView.cpp" />
+    <ClCompile Include="Source\PlatformView.cpp" />
+    <ClCompile Include="Source\ProjectileView.cpp" />
+    <ClCompile Include="Source\Attackable.cpp" />
+    <ClCompile Include="Source\AudioSource.cpp" />
+    <ClCompile Include="Source\BoxRenderComponent.cpp" />
+    <ClCompile Include="Source\ButtonComponent.cpp" />
+    <ClCompile Include="Source\Game.cpp" />
+    <ClCompile Include="Source\GameEvents.cpp" />
+    <ClCompile Include="Source\GameProcess.cpp" />
+    <ClCompile Include="Source\GumbaView.cpp" />
+    <ClCompile Include="Source\HealthComponent.cpp" />
+    <ClCompile Include="Source\KoopaTroopaView.cpp" />
+    <ClCompile Include="Source\MarioStates.cpp" />
+    <ClCompile Include="Source\ParticleComponent.cpp" />
+    <ClCompile Include="Source\PiranhaPlantView.cpp" />
+    <ClCompile Include="Source\PlayerView.cpp" />
+    <ClCompile Include="Source\SoundResource.cpp" />
+    <ClCompile Include="Source\SquirrelRNG.cpp" />
+    <ClCompile Include="Source\StateMachineComponent.cpp" />
+    <ClCompile Include="Source\TagComponent.cpp" />
+    <ClCompile Include="Source\TextureComponent.cpp" />
+    <ClCompile Include="Source\TextureResource.cpp" />
+    <ClCompile Include="Source\UIImage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\ActorType.h" />
+    <ClInclude Include="Source\AnimationComponent.h" />
+    <ClInclude Include="Source\BowserView.h" />
+    <ClInclude Include="Source\CrateComponent.h" />
+    <ClInclude Include="Source\DamageComponent.h" />
+    <ClInclude Include="Source\FireBallView.h" />
+    <ClInclude Include="Source\FireChainView.h" />
+    <ClInclude Include="Source\MushroomView.h" />
+    <ClInclude Include="Source\PlatformView.h" />
+    <ClInclude Include="Source\ProjectileView.h" />
+    <ClInclude Include="Source\Attackable.h" />
+    <ClInclude Include="Source\AudioSource.h" />
+    <ClInclude Include="Source\BoxRenderComponent.h" />
+    <ClInclude Include="Source\ButtonComponent.h" />
+    <ClInclude Include="Source\ComponentHelper.h" />
+    <ClInclude Include="Source\ComponentIDs.h" />
+    <ClInclude Include="Source\Game.h" />
+    <ClInclude Include="Source\GameEvents.h" />
+    <ClInclude Include="Source\GameProcess.h" />
+    <ClInclude Include="Source\GumbaView.h" />
+    <ClInclude Include="Source\HealthComponent.h" />
+    <ClInclude Include="Source\KoopaTroopaView.h" />
+    <ClInclude Include="Source\MarioStates.h" />
+    <ClInclude Include="Source\ParticleComponent.h" />
+    <ClInclude Include="Source\PiranhaPlantView.h" />
+    <ClInclude Include="Source\PlayerView.h" />
+    <ClInclude Include="Source\SoundResource.h" />
+    <ClInclude Include="Source\SquirrelRNG.h" />
+    <ClInclude Include="Source\StateMachineComponent.h" />
+    <ClInclude Include="Source\TagComponent.h" />
+    <ClInclude Include="Source\TextureComponent.h" />
+    <ClInclude Include="Source\TextureResource.h" />
+    <ClInclude Include="Source\UIImage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Assets\Actors\Bomb.xml" />
+    <Xml Include="Assets\Actors\Boots.xml" />
+    <Xml Include="Assets\Actors\Bottom.xml" />
+    <Xml Include="Assets\Actors\Bowser.xml" />
+    <Xml Include="Assets\Actors\BowserFire.xml" />
+    <Xml Include="Assets\Actors\Box.xml" />
+    <Xml Include="Assets\Actors\Crate.xml" />
+    <Xml Include="Assets\Actors\FireBall.xml" />
+    <Xml Include="Assets\Actors\FireBall_Static.xml" />
+    <Xml Include="Assets\Actors\FireChain.xml" />
+    <Xml Include="Assets\Actors\Flower.xml" />
+    <Xml Include="Assets\Actors\GreenLight.xml" />
+    <Xml Include="Assets\Actors\Gumba.xml" />
+    <Xml Include="Assets\Actors\KoopaTroopa.xml" />
+    <Xml Include="Assets\Actors\LeftWall.xml" />
+    <Xml Include="Assets\Actors\Mario.xml" />
+    <Xml Include="Assets\Actors\MushRoom.xml" />
+    <Xml Include="Assets\Actors\Ninja.xml" />
+    <Xml Include="Assets\Actors\PiranhaPlant.xml" />
+    <Xml Include="Assets\Actors\PrincessPeach.xml" />
+    <Xml Include="Assets\Actors\PurpleLight.xml" />
+    <Xml Include="Assets\Actors\RightWall.xml" />
+    <Xml Include="Assets\Actors\Star.xml" />
+    <Xml Include="Assets\Actors\Toad.xml" />
+    <Xml Include="Assets\GUI\Button.xml" />
+    <Xml Include="Assets\Processes\DancerPatrol.xml" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D9F69533-CDA7-4898-9880-72A76C5AE1AD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ProjectSlug</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>Project_Mario</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)Game\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(PlatformShortName)_$(Configuration)\</IntDir>
+    <CustomBuildBeforeTargets>ClCompile</CustomBuildBeforeTargets>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)Game\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(PlatformShortName)_$(Configuration)\</IntDir>
+    <CustomBuildBeforeTargets>ClCompile</CustomBuildBeforeTargets>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)Game\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(PlatformShortName)_$(Configuration)\</IntDir>
+    <CustomBuildBeforeTargets>ClCompile</CustomBuildBeforeTargets>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)Game\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(PlatformShortName)_$(Configuration)\</IntDir>
+    <CustomBuildBeforeTargets>ClCompile</CustomBuildBeforeTargets>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)Game\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(PlatformShortName)_$(Configuration)\</IntDir>
+    <CustomBuildBeforeTargets>ClCompile</CustomBuildBeforeTargets>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)Game\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(PlatformShortName)_$(Configuration)\</IntDir>
+    <CustomBuildBeforeTargets>ClCompile</CustomBuildBeforeTargets>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Beluga\Include;$(ProjectDir)Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Beluga.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\Beluga\Libs\$(PlatformShortName)_$(Configuration)\*.dll" "$(OutDir)" /y /i /d</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\GluaGen" "$(ProjectDir)Source"
+"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\ResourcePacker" "$(ProjectDir)Assets" "$(ProjectDir)Game\resources.bin"</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>alwaysrun</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Beluga\Include;$(ProjectDir)Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Beluga.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\GluaGen" "$(ProjectDir)Source"
+"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\ResourcePacker" "$(ProjectDir)Assets" "$(ProjectDir)Game\resources.bin"</Command>
+      <Outputs>alwaysrun</Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\Beluga\Libs\$(PlatformShortName)_$(Configuration)\*.dll" "$(OutDir)" /y /i /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Beluga\Include;$(ProjectDir)Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Beluga.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\Beluga\Libs\$(PlatformShortName)_$(Configuration)\*.dll" "$(OutDir)" /y /i /d</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\GluaGen" "$(ProjectDir)Source"
+"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\ResourcePacker" "$(ProjectDir)Assets" "$(ProjectDir)Game\resources.bin"</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>alwaysrun</Outputs>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>BELUGA_TEST_BUILD;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Beluga\Include;$(ProjectDir)Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Beluga.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\Beluga\Libs\$(PlatformShortName)_$(Configuration)\*.dll" "$(OutDir)" /y /i /d</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\GluaGen" "$(ProjectDir)Source"
+"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\ResourcePacker" "$(ProjectDir)Assets" "$(ProjectDir)Game\resources.bin"</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>alwaysrun</Outputs>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Beluga\Include;$(ProjectDir)Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Beluga.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\GluaGen" "$(ProjectDir)Source"
+"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\ResourcePacker" "$(ProjectDir)Assets" "$(ProjectDir)Game\resources.bin"</Command>
+      <Outputs>alwaysrun</Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\Beluga\Libs\$(PlatformShortName)_$(Configuration)\*.dll" "$(OutDir)" /y /i /d</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>BELUGA_TEST_BUILD;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Beluga\Include;$(ProjectDir)Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Beluga.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <Command>"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\GluaGen" "$(ProjectDir)Source"
+"$(SolutionDir)Beluga\Libs\$(PlatformShortName)_$(Configuration)\ResourcePacker" "$(ProjectDir)Assets" "$(ProjectDir)Game\resources.bin"</Command>
+      <Outputs>alwaysrun</Outputs>
+    </CustomBuildStep>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)..\Beluga\Libs\$(PlatformShortName)_$(Configuration)\*.dll" "$(OutDir)" /y /i /d</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

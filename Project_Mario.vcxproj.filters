@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Source\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlayerView.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HealthComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BoxRenderComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GumbaView.cpp">
+      <Filter>Monsters\Gumba</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\KoopaTroopaView.cpp">
+      <Filter>Monsters\KoopaTroopa</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PiranhaPlantView.cpp">
+      <Filter>Monsters\PiranhaPlant</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\StateMachineComponent.cpp">
+      <Filter>Components\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MarioStates.cpp">
+      <Filter>Player\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AnimationComponent.cpp">
+      <Filter>Components\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TextureComponent.cpp">
+      <Filter>Components\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AudioSource.cpp">
+      <Filter>Components\Sounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ButtonComponent.cpp">
+      <Filter>Components\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UIImage.cpp">
+      <Filter>Components\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameProcess.cpp">
+      <Filter>GameEvents\Processes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ParticleComponent.cpp">
+      <Filter>Components\VFX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SquirrelRNG.cpp" />
+    <ClCompile Include="Source\GameEvents.cpp">
+      <Filter>GameEvents\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Attackable.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TagComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BowserView.cpp">
+      <Filter>Monsters\Bowser</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TextureResource.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SoundResource.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DamageComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlatformView.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FireBallView.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CrateComponent.cpp">
+      <Filter>Components\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MushroomView.cpp">
+      <Filter>NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ProjectileView.cpp">
+      <Filter>Monsters\Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FireChainView.cpp">
+      <Filter>Monsters\FireChain</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{b1fbe7d6-1785-47a8-b838-a0c89e92b42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{fb3e7020-f834-467e-a870-dde6e3ff0ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{d5bee3b4-9525-4f58-bb05-b116571b121c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ActorData">
+      <UniqueIdentifier>{41ee4f65-1680-471f-a156-2f5549e7f3fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\FSM">
+      <UniqueIdentifier>{23e93ece-53b8-4eaf-90f3-91fd3ccffe07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Monsters">
+      <UniqueIdentifier>{51b53abe-74e2-4900-806f-c80785c35d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Monsters\Gumba">
+      <UniqueIdentifier>{712e5b5e-c170-4f92-8ee0-6391751e5de3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Monsters\KoopaTroopa">
+      <UniqueIdentifier>{824e2145-4631-40f3-a5c8-542755d4e5c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Monsters\PiranhaPlant">
+      <UniqueIdentifier>{b0cc693c-c15e-4c97-b49c-5eccd1db08b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\States">
+      <UniqueIdentifier>{fb3a4b92-7b6d-4268-93d9-9437c062c941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\GUI">
+      <UniqueIdentifier>{dbe9a207-5c98-4972-a1a0-1abe1e1710dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Sounds">
+      <UniqueIdentifier>{b2477417-5080-487e-9981-c771dca9b4af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Sprites">
+      <UniqueIdentifier>{c675eee3-ad5d-4654-b87a-895438fcd2d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEvents">
+      <UniqueIdentifier>{05c2b8ae-c097-4ee1-908c-9cc0e419e615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEvents\Processes">
+      <UniqueIdentifier>{b14a22c8-7d12-4a14-b3ed-ba3665eb8428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NPC">
+      <UniqueIdentifier>{621fbd6b-74e5-467b-9c47-97b5c38c57e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUIData">
+      <UniqueIdentifier>{5ce64e6c-2fe1-4280-84c6-2f2635d10dd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProcessesData">
+      <UniqueIdentifier>{82aea951-1061-4804-9471-fc6af5cb0f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\VFX">
+      <UniqueIdentifier>{7c31ee40-0250-48b0-8a44-ba056f01e1a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEvents\Events">
+      <UniqueIdentifier>{e0c79059-64de-4606-8622-3e659015f341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{8216e631-36c8-4d00-a532-e94bdb9c7c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{95f9696a-0329-495d-9e0c-ed1bd060efbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Item">
+      <UniqueIdentifier>{644c4639-8792-4d17-8ee6-99b74f86f411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Monsters\Bowser">
+      <UniqueIdentifier>{68d48a02-dace-43b9-b9b6-75985ecddb9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Monsters\Projectile">
+      <UniqueIdentifier>{b27b438a-79b0-4d21-b1d2-14a0f2fa9d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Monsters\FireChain">
+      <UniqueIdentifier>{1d700c6e-e62a-4c22-a0ce-0789834dcb45}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlayerView.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ComponentHelper.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ComponentIDs.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\HealthComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BoxRenderComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GumbaView.h">
+      <Filter>Monsters\Gumba</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\KoopaTroopaView.h">
+      <Filter>Monsters\KoopaTroopa</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PiranhaPlantView.h">
+      <Filter>Monsters\PiranhaPlant</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StateMachineComponent.h">
+      <Filter>Components\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MarioStates.h">
+      <Filter>Player\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AnimationComponent.h">
+      <Filter>Components\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TextureComponent.h">
+      <Filter>Components\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AudioSource.h">
+      <Filter>Components\Sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ButtonComponent.h">
+      <Filter>Components\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UIImage.h">
+      <Filter>Components\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameProcess.h">
+      <Filter>GameEvents\Processes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ParticleComponent.h">
+      <Filter>Components\VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SquirrelRNG.h" />
+    <ClInclude Include="Source\GameEvents.h">
+      <Filter>GameEvents\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ActorType.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Attackable.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TagComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BowserView.h">
+      <Filter>Monsters\Bowser</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TextureResource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SoundResource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DamageComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlatformView.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FireBallView.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CrateComponent.h">
+      <Filter>Components\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MushroomView.h">
+      <Filter>NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ProjectileView.h">
+      <Filter>Monsters\Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FireChainView.h">
+      <Filter>Monsters\FireChain</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Assets\Actors\Box.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Mario.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Gumba.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\KoopaTroopa.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\PiranhaPlant.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\MushRoom.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Star.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\GUI\Button.xml">
+      <Filter>GUIData</Filter>
+    </Xml>
+    <Xml Include="Assets\Processes\DancerPatrol.xml">
+      <Filter>ProcessesData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Ninja.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\GreenLight.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\PurpleLight.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\FireBall.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Bomb.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Boots.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Flower.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Bowser.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\BowserFire.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Crate.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Toad.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\PrincessPeach.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\Bottom.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\LeftWall.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\RightWall.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\FireChain.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+    <Xml Include="Assets\Actors\FireBall_Static.xml">
+      <Filter>ActorData</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
